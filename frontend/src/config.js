@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:8000/api/v1/anime';
+const API_URL = 'https://fierce-harbor-47064.herokuapp.com/api/v1/anime';
 
 export {
     API_URL,

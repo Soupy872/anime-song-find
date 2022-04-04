@@ -18,4 +18,12 @@ export const Content = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 20px;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+        :last-child {
+            padding-bottom: 30px;
+        }
+    }
 `;

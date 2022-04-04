@@ -30,6 +30,16 @@ export const Wrapper = styled.div`
         padding: 0px;
         padding-bottom: 15px;
     }
+
+    @media screen and (max-width: 768px) {
+        h3 {
+            font-size: var(--fontSmall);
+        }
+
+        h4 {
+            font-size: 0.8rem;
+        }
+    }
 `;
 
 export const Content = styled.div`

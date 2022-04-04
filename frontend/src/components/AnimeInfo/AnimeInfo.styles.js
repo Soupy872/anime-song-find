@@ -26,4 +26,16 @@ export const Text = styled.div`
     padding: 90px; 
     color: var(--white);
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        padding: 10px;
+
+        h1 {
+            font-size: var(--fontMed);
+        }
+
+        h2 {
+            font-size: var(--small);
+        }
+    }
 `;

@@ -2,15 +2,15 @@ import express from "express";
 import mongodb from "mongodb";
 import dotenv from "dotenv";
 import cors from "cors";
+
+// api & dao
 import SongsDAO from "./dao/songsDAO.js";
 import AnimeDAO from "./dao/animeDAO.js";
 import ArtistsDAO from "./dao/artistsDAO.js";
 import AnimeCTRL from "./api/anime.controller.js"
 import SongsCTRL from "./api/songs.controller.js"
+
 const app = express();
-
-// https://docs.mongodb.com/drivers/node/current/fundamentals/
-
 const MongoClient = mongodb.MongoClient;
 dotenv.config();
 

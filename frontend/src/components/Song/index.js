@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { Wrapper, Content, Button, DisButton } from "./Song.styles";
 
 const Song = ({ title, artist, spotify, apple, amazon, youtube }) => {
@@ -37,6 +38,15 @@ const Song = ({ title, artist, spotify, apple, amazon, youtube }) => {
             </Content>
         </Wrapper>
     )
+}
+
+Song.propTypes = { 
+    title: PropTypes.string, 
+    artist: PropTypes.string, 
+    spotify: PropTypes.string, 
+    apple: PropTypes.string, 
+    amazon: PropTypes.string, 
+    youtube: PropTypes.string 
 }
 
 export default Song;
