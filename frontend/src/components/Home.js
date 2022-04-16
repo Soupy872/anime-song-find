@@ -33,7 +33,7 @@ const Home = () => {
                     />
                 ))}
             </Grid>
-            {state.page < state.total_pages && (
+            {state.page < state.total_pages - 1 && (
                 <Button text="Load More" callback={() => setIsLoadingMore(true)} />
             )}
         </React.Fragment>

@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
     align-items: center;
     justify-content: left;
     height: 100px;
-    background-color: var(--darkGrey);
+    background: rgb(2,0,36);
+background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(238,238,238,1) 100%);
     color: white;
 
     a {
@@ -16,6 +17,7 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 768px) {
         display: block;
         padding: 10px;
+        padding-bottom: 0px;
         height: auto;
     }
 `;
@@ -41,6 +43,7 @@ export const Section = styled.div`
         margin: auto;
         padding: 10px;
         text-align: center;
+        border-bottom: 2px solid var(--medGrey);
     }
 `;
 
@@ -61,8 +64,9 @@ export const InfoFrom = styled.div`
     @media screen and (max-width: 768px) {
         margin: auto;
         padding: 10px;
-        height: 75px;
+        height: 55px;
         text-align: center;
+        font-size: var(--fontSmall);
 
         img {
             width: auto;
